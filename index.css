@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: RobotoSlab;
+}
+body{
+    background-color: rgb(248, 213, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* styling of the whole container */
+.container{
+    max-width: 1000px;
+    min-height:1000px ;
+    position: block;
+    width: 100%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    box-shadow: 0px 35px 55px rgba(255, 0, 0, 0.1);
+    border-radius: 5px;
+}
+/* this is for the leftside of the container/box */
+.container .leftside{
+    position: relative;
+    padding: 40px;
+    background-color: rgb(217, 178, 178);
+    
+}
+/* for profiling styling */
+.Profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba (255, 255, 255, 0.2);
+}
+
+/* for styling the imagebox */
+.Profile .ProfileImagebox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    font-size: large;
+}
+
+/* for styling the image */
+.Profile .ProfileImagebox img{
+    position: absolute;
+    top :0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* for the name of the resume */
+.name{
+    padding-top: 20px;
+}
+
+/* for styling all the titles */
+.title{ 
+    color: rgb(5, 0, 3);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px; 
+}
+
+/* for designing the horizontal line */
+hr{
+    border: 2px solid;
+    color: black;
+}
+
+/*  for personality */
+.personality{
+    padding-top: 0px;
+    line-height: 2.3rem;
+    font-size: large;
+}
+/* for contact styling */
+.Contactme, .language, .skills, .infotxt{
+    padding-top: 20px;
+    line-height: 2.3rem;
+    font-size: large;
+ }
+ 
+.contact,  .skills, .Education span{
+    padding-top: 1px;
+}
+.Contactme, .language,  .skills, Education, ul{
+   position: relative;
+   padding-top: 15px ;
+}
+
+.Contactme, .skills, .language, ul li{
+    position: relative;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-left: 15px;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+ }
+
+.Contactme, .language,  .skills, Education ul li span{
+    padding-top: 1px;
+    font-style: RobotoSlab;
+    
+}
+
+ /* for the right side */
+.container .rightside{
+   padding: 40px;
+   background-color: rgb(255, 255, 255);
+   position: relative;
+     
+ }
+
+ /* personality */
+
+
+ /* belong to the right side */
+ /* for education styling */
+ .Education{
+    padding-top: 10px; 
+    font-size: large;
+ }
+
+.Education ul li{
+    position: relative;
+    list-style: none;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    line-height: 1.4rem;
+ }
+ 
+
+/* for experience styling */
+ .experience{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    font-size: large;
+ }
+
+ .experience .infoexp{
+    padding-top: 10px;
+    padding-bottom: 0px;
+   
+ }
+
+
+ @media screen and (max-width:1000px) {
+    .Profile{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba (255, 255, 255, 0.2);
+    }
+        .container{
+            grid-template-columns: repeat(1,2fr);
+            font-style: justify;
+        }
+
+    
+}
